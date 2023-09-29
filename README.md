@@ -19,7 +19,7 @@ https://covid-193.p.rapidapi.com/statistics
 <h2>RapidAPI-Key</h2>
 
 ```bash
-ht94a56e86d7mshcfab305ae016d14p1759f1jsn4604c082ab7e
+94a56e86d7mshcfab305ae016d14p1759f1jsn4604c082ab7e
 ```
 
 <h2>RapidAPI-Host</h2>
