@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 100%;
+  background: #333;
+  top: 0;
+}
+
+body:before {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: #f6f5f0;
+  padding: 2%;
+  box-shadow: 0px 10px 6px -8px rgba(0, 0, 0, 0.75);
+}
+
+.board {
+  column-count: 3;
+  column-gap: 1em;
+  position: relative;
+  right: -35px;
+}
+
+.container h2 {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+span#country {
+  color: #41a7ff;
+  font-style: italic;
+}
+
+div.row {
+  font-family: "Courgette", cursive;
+  color: #808080;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+}
+
+span,
+p {
+  display: inline;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card {
+  width: 84%;
+  background: #ccc;
+  padding: 8%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.card.a {
+  background: #41a7ff;
+}
+
+.card.cr {
+  background: #ff3434;
+}
+
+.card.r {
+  background: #32b336;
+}
+
+.card.ca {
+  background: #d83f3f;
+}
+
+.card.d {
+  background: #ff0053;
+}
+
+.card.t {
+  background: #ffa501;
+}
+
+.card span {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.card i {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+  .board {
+    column-count: 2;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .board {
+    column-count: 1;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
