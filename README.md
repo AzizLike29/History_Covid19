@@ -8,7 +8,7 @@ Tugas         : Assignment3
 
 <h2>Latar Belakang</h2>
 
-<p>Sudah lebih dari  2 tahun, Indonesia dan dunia sedang berjuang hebat menghadapipandemi virus corona (Covid-19). Banyak cara yang dapat kita lakukan untuk ikut membantu, salah satunya dengan membagikan informasiperkembangan kasus Covid-19 di Indonesia.</p>
+<p>Sudah lebih dari 2 tahun, Indonesia dan dunia sedang berjuang hebat menghadapi pandemi virus corona (Covid-19). Banyak cara yang dapat kita lakukan untuk ikut membantu, salah satunya dengan membagikan informasi perkembangan kasus Covid-19 di Indonesia.</p>
 
 <h2>Data API</h2>
 
