@@ -46,6 +46,7 @@ async function fetchDataByCountry(country) {
 
 document.getElementById("searchButton").addEventListener("click", function () {
   const country = document.getElementById("countryInput").value;
+  document.getElementById("countryInput").value = "";
 
   fetchDataByCountry(country);
 });
