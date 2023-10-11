@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History Covid-19</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="shortcut icon"
       href="assets/img/coronavirus.png"
@@ -17,61 +20,102 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <h2>
+    <div class="custom-container">
+      <h1 data-aos="fade-down">
         Covid-19 Tracker Cases In
         <span id="country"></span>
-      </h2>
-      <div class="row">
-        <span
-          >Continent :
-          <p id="continent"></p>
+      </h1>
+      <div class="detail" data-aos="zoom-in">
+        <h3>
+          Continent :
+          <span id="continent"></span>
+        </h3>
+        <h3>
           Day :
-          <p id="day"></p
-        ></span>
+          <span id="day"></span>
+        </h3>
       </div>
-      <div class="search">
-        <form>
-          <input type="text" id="countryInput" placeholder="Enter keywords" />
-          <button type="button" class="btn btn-primary" id="searchButton">
-            Search
-          </button>
-        </form>
-      </div>
+      <form id="search" data-aos="fade-up" data-aos-duration="1000">
+        <input type="search" placeholder="Enter keywords" id="countryInput" />
+        <button type="submit">Search</button>
+      </form>
       <div class="board">
-        <div class="card a">
-          <i class="fas fa-tachometer-alt"></i><br />
+        <div
+          class="card a"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fas fa-tachometer-alt"></i>
           <h5>Active Cases</h5>
           <span id="active"></span>
         </div>
-        <div class="card ca">
-          <i class="fa-solid fa-list"></i><br />
+        <div
+          class="card ca"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fa-solid fa-list"></i>
           <h5>Total Cases</h5>
           <span id="cases"></span>
         </div>
-        <div class="card cr">
-          <i class="fa-solid fa-circle-xmark"></i><br />
+        <div
+          class="card cr"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fa-solid fa-circle-xmark"></i>
           <h5>Critical Cases</h5>
           <span id="critical"></span>
         </div>
-        <div class="card d">
-          <i class="fa-solid fa-xmark"></i><br />
+        <div
+          class="card d"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fa-solid fa-xmark"></i>
           <h5>Total Deaths</h5>
           <span id="deaths"></span>
         </div>
-        <div class="card r">
-          <i class="fa-solid fa-square-check"></i><br />
+        <div
+          class="card r"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fa-solid fa-square-check"></i>
           <h5>Recovered Cases</h5>
           <span id="recovered"></span>
         </div>
-        <div class="card t">
-          <i class="fa-solid fa-eye"></i><br />
+        <div
+          class="card t"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <i class="fa-solid fa-eye"></i>
           <h5>Total Test Done</h5>
           <span id="tests"></span>
         </div>
       </div>
     </div>
-    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

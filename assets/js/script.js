@@ -44,9 +44,16 @@ async function fetchDataByCountry(country) {
   }
 }
 
-document.getElementById("searchButton").addEventListener("click", function () {
+function handleSubmitSearch(event) {
+  event.preventDefault();
   const country = document.getElementById("countryInput").value;
   document.getElementById("countryInput").value = "";
 
   fetchDataByCountry(country);
-});
+}
+
+// your form
+var form = document.getElementById("search");
+
+// attach event listener
+form.addEventListener("submit", handleSubmitSearch, true);
