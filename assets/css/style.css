@@ -60,6 +60,7 @@ body:after {
 .detail {
   display: inline-flex;
   gap: 20px;
+  font-style: italic;
 }
 
 .detail > h3 {
