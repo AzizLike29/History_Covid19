@@ -124,37 +124,37 @@ body:after {
   gap: 10px;
 }
 
-.card.a {
+.card.active-cases {
   background: #41a7ff;
   outline-style: solid;
   outline-color: #044bd9;
 }
 
-.card.cr {
-  background: #ff99a9;
-  outline-style: solid;
-  outline-color: #ff3434;
-}
-
-.card.r {
-  background: #32b336;
-  outline-style: solid;
-  outline-color: #006400;
-}
-
-.card.ca {
+.card.total-cases {
   background: #ff69b4;
   outline-style: solid;
   outline-color: #d83f3f;
 }
 
-.card.d {
+.card.critical-cases {
+  background: #ff99a9;
+  outline-style: solid;
+  outline-color: #ff3434;
+}
+
+.card.total-deaths {
   background: #ff6b81;
   outline-style: solid;
   outline-color: #ff0053;
 }
 
-.card.t {
+.card.recovered-cases {
+  background: #32b336;
+  outline-style: solid;
+  outline-color: #006400;
+}
+
+.card.test-done {
   background: #ffdb58;
   outline-style: solid;
   outline-color: #ffa501;
