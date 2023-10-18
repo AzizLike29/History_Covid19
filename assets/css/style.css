@@ -41,11 +41,11 @@ body:after {
   border-radius: 10px;
   background: #f6f5f0;
   box-shadow: 0px 10px 6px -8px rgba(0, 0, 0, 0.75);
-  text-align: center;
   display: flex;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
 }
 
 .custom-container > h1 {
@@ -74,7 +74,7 @@ body:after {
   justify-content: center;
   gap: 5px;
   height: 40px;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
   max-width: 300px;
@@ -95,6 +95,7 @@ body:after {
   outline: none;
   border: none;
   height: 100%;
+  cursor: pointer;
   padding: 20px 10px;
   display: flex;
   align-items: center;
@@ -118,44 +119,18 @@ body:after {
   margin-top: 20px;
   width: 150px;
   height: 100px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
 
-.card.active-cases {
-  background: #41a7ff;
-  outline-style: solid;
-  outline-color: #044bd9;
-}
-
-.card.total-cases {
-  background: #ff69b4;
-  outline-style: solid;
-  outline-color: #d83f3f;
-}
-
-.card.critical-cases {
-  background: #ff99a9;
-  outline-style: solid;
-  outline-color: #ff3434;
-}
-
-.card.total-deaths {
-  background: #ff6b81;
-  outline-style: solid;
-  outline-color: #ff0053;
-}
-
-.card.recovered-cases {
-  background: #32b336;
-  outline-style: solid;
-  outline-color: #006400;
-}
-
+.card.active-cases,
+.card.total-cases,
+.card.critical-cases,
+.card.total-deaths,
+.card.recovered-cases,
 .card.test-done {
-  background: #ffdb58;
-  outline-style: solid;
-  outline-color: #ffa501;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }

@@ -20,12 +20,12 @@ async function fetchDataByCountry(country) {
       const country = statistics.country;
       const continent = statistics.continent;
       const day = statistics.day;
-      const activeCases = statistics.cases.active;
-      const totalCases = statistics.cases.total;
-      const criticalCases = statistics.cases.critical;
-      const totalDeaths = statistics.deaths.total;
-      const recoveredCases = statistics.cases.recovered;
-      const totalTests = statistics.tests.total;
+      const activeCases = statistics.cases.active ?? "Null";
+      const totalCases = statistics.cases.total ?? "Null";
+      const criticalCases = statistics.cases.critical ?? "Null";
+      const totalDeaths = statistics.deaths.total ?? "Null";
+      const recoveredCases = statistics.cases.recovered ?? "Null";
+      const totalTests = statistics.tests.total ?? "Null";
 
       document.getElementById("country").textContent = country;
       document.getElementById("continent").textContent = continent;
@@ -48,8 +48,6 @@ function handleSubmitSearch(event) {
   event.preventDefault();
   const country = document.getElementById("countryInput").value;
   document.getElementById("countryInput").value = "";
-
-  fetchDataByCountry(country);
 }
 
 // your form
