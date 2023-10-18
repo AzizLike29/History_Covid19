@@ -155,12 +155,24 @@ li.toast.error {
   gap: 10px;
 }
 
-.card.active-cases,
-.card.total-cases,
-.card.critical-cases,
-.card.total-deaths,
-.card.recovered-cases,
-.card.test-done,
+.card.active-cases {
+  box-shadow: 4px 4px 6px #41a7ff;
+}
+.card.total-cases {
+  box-shadow: 4px 4px 6px #db3f3f;
+}
+.card.critical-cases {
+  box-shadow: 4px 4px 6px #ff3434;
+}
+.card.total-deaths {
+  box-shadow: 4px 4px 6px #ff0053;
+}
+.card.recovered-cases {
+  box-shadow: 4px 4px 6px #32b336;
+}
+.card.test-done {
+  box-shadow: 4px 4px 6px #ffa501;
+}
 .column {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
