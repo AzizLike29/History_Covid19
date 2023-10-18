@@ -156,23 +156,24 @@ li.toast.error {
 }
 
 .card.active-cases {
-  box-shadow: 4px 4px 6px #41a7ff;
+  box-shadow: 4px 4px 6px rgba(65, 167, 255, 0.2);
 }
 .card.total-cases {
-  box-shadow: 4px 4px 6px #db3f3f;
+  box-shadow: 4px 4px 6px rgba(219, 63, 63, 0.2);
 }
 .card.critical-cases {
-  box-shadow: 4px 4px 6px #ff3434;
+  box-shadow: 4px 4px 6px rgba(255, 52, 52, 0.2);
 }
 .card.total-deaths {
-  box-shadow: 4px 4px 6px #ff0053;
+  box-shadow: 4px 4px 6px rgba(255, 0, 83, 0.2);
 }
 .card.recovered-cases {
-  box-shadow: 4px 4px 6px #32b336;
+  box-shadow: 4px 4px 6px rgba(50, 179, 54, 0.2);
 }
 .card.test-done {
-  box-shadow: 4px 4px 6px #ffa501;
+  box-shadow: 4px 4px 6px rgba(255, 165, 1, 0.2);
 }
+
 .column {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
