@@ -32,14 +32,14 @@ async function fetchDataByCountry(country) {
         const country = statistics.country;
         const continent = statistics.continent;
         const day = formatDate(statistics.day);
-        const activeCases = statistics.cases.active.toLocaleString() ?? "Null";
-        const totalCases = statistics.cases.total.toLocaleString() ?? "Null";
+        const activeCases = statistics.cases.active?.toLocaleString() ?? "Null";
+        const totalCases = statistics.cases.total?.toLocaleString() ?? "Null";
         const criticalCases =
-          statistics.cases.critical.toLocaleString() ?? "Null";
-        const totalDeaths = statistics.deaths.total.toLocaleString() ?? "Null";
+          statistics.cases.critical?.toLocaleString() ?? "Null";
+        const totalDeaths = statistics.deaths.total?.toLocaleString() ?? "Null";
         const recoveredCases =
-          statistics.cases.recovered.toLocaleString() ?? "Null";
-        const totalTests = statistics.tests.total.toLocaleString() ?? "Null";
+          statistics.cases.recovered?.toLocaleString() ?? "Null";
+        const totalTests = statistics.tests.total?.toLocaleString() ?? "Null";
 
         document.getElementById("country").textContent = country;
         document.getElementById("continent").textContent = continent;
