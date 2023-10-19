@@ -30,6 +30,6 @@ covid-193.p.rapidapi.com
 
 <h2>Tampilan Web</h2>
 
-![covid19](https://github.com/AzizLike29/History_Covid19/assets/119909214/0bf0bfd8-f68b-4c9d-ad9b-4c4ec1bd00a3)
+![Web Covid](https://github.com/AzizLike29/History_Covid19/assets/119909214/c467bebe-ce4b-4aee-9385-7a3b93fc2a7f)
 
 <p>Terima Kasih</p>
