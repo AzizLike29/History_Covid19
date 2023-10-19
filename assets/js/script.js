@@ -2,7 +2,7 @@ const baseUrl = "https://covid-193.p.rapidapi.com/statistics";
 
 async function fetchDataByCountry(country) {
   // Clear the data elements
-  clearData();
+  clearDataElement();
 
   const url = `${baseUrl}?country=${country}`;
   const options = {
@@ -33,7 +33,7 @@ async function fetchDataByCountry(country) {
   }
 }
 
-function clearData() {
+function clearDataElement() {
   // Clear the data elements
   document.getElementById("country").textContent = "";
   document.getElementById("continent").textContent = "";
@@ -56,7 +56,7 @@ function displayError(message) {
   // Time to fade
   setTimeout(() => {
     errorAlert.classList.add("active");
-  }, 100);
+  }, 25);
 }
 
 function clearError() {
